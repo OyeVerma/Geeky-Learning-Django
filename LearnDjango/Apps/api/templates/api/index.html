@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block body %}
+<div class="container">
+<div class="alert alert-success">Teacher Form</div>
+<div class="text-center">
+
+<form action="" method="post">
+{% csrf_token %}
+{{form.as_p}}
+<input type="submit" value="Submit">
+</form>
+
+</div>
+
+<div class="alert">
+<form action="{% url 'data' %}">
+<label for="search">Enter Primary Key : </label><input type="text" name='search'>
+
+</form>
+</div>
+</div>
+{% endblock body %}

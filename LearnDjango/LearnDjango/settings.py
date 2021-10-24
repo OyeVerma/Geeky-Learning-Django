@@ -44,6 +44,11 @@ INSTALLED_APPS = [
     'Apps.filters',
     'Apps.onetoone',
     'Apps.manytoone',
+    'Apps.manytomany',
+    'Apps.classbasedview',
+
+    'rest_framework',
+    'Apps.api',
 ]
 
 MIDDLEWARE = [

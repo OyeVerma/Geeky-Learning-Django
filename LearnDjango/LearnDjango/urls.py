@@ -9,5 +9,8 @@ urlpatterns = [
     path('middleware/', include('Apps.middleware.urls')),
     path('filters/', include('Apps.filters.urls')),
     path('onetoone/', include('Apps.onetoone.urls')),
-    path('manytoonetoone/', include('Apps.manytoone.urls')),
+    path('manytoone/', include('Apps.manytoone.urls')),
+    path('manytomany/', include('Apps.manytomany.urls')),
+    path('classbasedview/', include('Apps.classbasedview.urls')),
+    path('api/', include('Apps.api.urls')),
 ]

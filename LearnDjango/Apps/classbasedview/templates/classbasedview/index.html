@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+
+{% block body %}
+This is Class Based View
+
+<form action="" method="post" class="alert alert-warning text-center">
+<div class="h2 alert alert-primary">Student Registration</div>
+{% csrf_token %}
+{{form.as_p}}
+<input type="submit" value="Submit" class="btn btn-outline-warning text-dark border-dark">
+</form>
+{% endblock body %}
