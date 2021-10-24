@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'Apps.core',
     'Apps.signals',
     'Apps.middleware',
-    # 'signals.apps.SignalsConfig',
+    'Apps.filters',
+    'Apps.onetoone',
+    'Apps.manytoone',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'Apps.filters.templatetags.my_filters'
             ],
         },
     },

@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+
+{% block body %}
+This is One to One Model Page
+
+<form action="">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit">Submit</button>
+</form>
+{% endblock body %}

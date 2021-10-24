@@ -1,4 +1,4 @@
-<div class="container bg-secondary text-white mb-2">
+<div class="container bg-secondary text-white text-center">
 
 
 {% comment %} Row 2 {% endcomment %}
@@ -15,6 +15,18 @@
  
 <div class="col">
 <a href="{% url 'index-middleware' %}" class="btn btn-outline-dark border m-2 text-white ">Middleware</a>
+</div>
+ 
+<div class="col">
+<a href="{% url 'index-filters' %}" class="btn btn-outline-dark border m-2 text-white ">Filters</a>
+</div>
+ 
+<div class="col">
+<a href="{% url 'index-onetoone' %}" class="btn btn-outline-dark border m-2 text-white ">One To One</a>
+</div>
+ 
+<div class="col">
+<a href="{% url 'index-manytoone' %}" class="btn btn-outline-dark border m-2 text-white ">Many To One</a>
 </div>
  
 </div>

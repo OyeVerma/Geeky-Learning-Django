@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load my_filters %}
+
+{% block body %}
+<div class="container alert alert-info">
+<code class="mark text-dark">Old</code> = This is Fi{[(*ler Page <br>
+<code class="mark text-dark">Removed New</code> = This is {{"Fi{[(*lters"|removeArgs:"({[*"}} Page
+</div>
+
+<div class="container alert alert-success text-center">
+
+<table>
+<tr>
+{% for key in dic %}
+<th>{{key}}</th>
+{% endfor %}
+</tr>
+
+<tr>
+{% for value in dic.values %}
+<td>{{value}}</td>
+{% endfor %}
+</tr>
+</table>
+</div>
+
+
+{% endblock body %}

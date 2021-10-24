@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-
 def index(request):
     return render(request, 'core/index.html', {
-        'title':'__Main Web Page__',
+        'title':'__MainWebPage__',
     })
